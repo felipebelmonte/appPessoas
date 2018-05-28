@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pessoas</string>
+    <string name="title_activity_form_pesosas">Cadastro de Pessoas</string>
+    <string name="sexo">Sexo:</string>
+    <string-array name="sexo_array">
+        <item>Selecione</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+</resources>

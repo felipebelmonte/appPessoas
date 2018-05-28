@@ -1,0 +1,64 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.atos.pessoas.activity.FormPesosasActivity"
+    tools:showIn="@layout/activity_form_pesosas">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nomeTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/formpessoas_nome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nome"/>
+
+            <TextView
+                android:id="@+id/idadeTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Idade:"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/formpessoas_idade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:hint="Idade"/>
+
+            <TextView
+                android:id="@+id/sexoTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Spinner
+                android:id="@+id/formpessoas_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sexo_array"
+                android:prompt="@string/sexo"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
